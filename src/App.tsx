@@ -1,13 +1,11 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Background from "./components/Background";
+import { Outlet } from "react-router-dom";
+import Navbar from "./components/layout/Navbar";
 
 function App() {
   return (
-    <div className="relative min-h-screen overflow-hidden bg-slate-950">
-      <Background />
+    <div className="min-h-screen bg-slate-950">
       <Navbar />
-      <Hero />
+      <Outlet />
     </div>
   );
 }
